@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "asul regular";
+  src: url("../assets/fonts/QuartzoBold-W9lv.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Judge regular";
+  src: url("../assets/fonts/Judge-2OaRe.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gold regular";
+  src: url("../assets/fonts/GoldleafBoldPersonalUseBold-eZ4dO.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #ACC8E5;
+}
+
+.home {
+  font-family: "asul regular";
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #112A46;
+  flex-direction: column;
+}
+.home h1 {
+  font-size: 30rem;
+}
+.home .flower {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: -400px;
+  margin-left: -200px;
+}
+.home .flower img {
+  width: 50%;
+  height: auto;
+  z-index: 999999999999;
+}
+
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 4rem;
+  align-items: center;
+  gap: 40px;
+}
+.section-2 .left {
+  width: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-family: "Judge regular";
+  color: #112A46;
+  margin-right: 10rem;
+}
+.section-2 .left h1 {
+  font-size: 20rem;
+}
+.section-2 .right {
+  width: 70%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+.section-2 .right h1 {
+  color: #191970;
+  font-size: 4rem;
+  font-family: "Judge regular";
+}
+.section-2 .right p {
+  color: #191970;
+  font-size: 2rem;
+  font-family: "Gold regular";
+}
+
+.section3 {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 2rem 4rem;
+}
+.section3 .left {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.section3 .left h1 {
+  font-size: 20rem;
+  color: #112A46;
+  font-family: "Judge regular";
+}
+.section3 .left h2 {
+  font-size: 4rem;
+  color: #191970;
+  font-family: "Judge regular";
+}
+.section3 .left p {
+  color: #191970;
+  font-size: 2rem;
+  font-family: "Gold regular";
+}
+.section3 .leaf {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.section3 .leaf img {
+  margin-right: -200px;
+  width: 100%;
+  height: auto;
+}
+
+.section4 {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section4 .flower {
+  width: 40%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: -100px;
+  margin-bottom: -300px;
+  z-index: 9999999999999;
+}
+.section4 .flower img {
+  width: 50%;
+  height: auto;
+}
+.section4 .right {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.section4 .right h1 {
+  font-size: 20rem;
+  color: #112A46;
+  font-family: "Judge regular";
+}
+.section4 .right h2 {
+  font-size: 4rem;
+  color: #191970;
+  font-family: "Judge regular";
+}
+.section4 .right p {
+  color: #191970;
+  font-size: 2rem;
+  font-family: "Gold regular";
+}/*# sourceMappingURL=style.css.map */
