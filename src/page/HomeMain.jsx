@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import GetQuote from "../components/GetQuote";
 import dat from "dat.gui";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -229,13 +229,15 @@ const HomeMain = () => {
     };
   }, []);
 
-  return (
+  return (<>
     <section>
       <div className="canvas " ref={main}></div>
       <div className="main">
         {/* render all the compound in the bellow and add the id also */}
       </div>
     </section>
+    <GetQuote/>
+    </>
   );
 };
 
