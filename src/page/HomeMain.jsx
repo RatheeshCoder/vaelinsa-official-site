@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import GetQuote from "../components/GetQuote";
 import dat from "dat.gui";
 import Video from "../component/Video";
 
@@ -230,7 +230,7 @@ const HomeMain = () => {
     };
   }, []);
 
-  return (
+  return (<>
     <section>
       <div className="canvas " ref={main}></div>
       <div className="main">
@@ -240,6 +240,8 @@ const HomeMain = () => {
         
       </div>
     </section>
+    <GetQuote/>
+    </>
   );
 };
 
