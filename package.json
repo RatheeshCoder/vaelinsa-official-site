@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "@react-icons/all-files": "^4.1.0",
     "@react-three/drei": "^9.105.2",
     "@types/gsap": "^3.0.0",
     "dat.gui": "^0.7.9",
@@ -20,7 +21,9 @@
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.1.0",
     "react-three-fiber": "^6.0.13",
+    "swiper": "^11.1.1",
     "three": "^0.163.0",
     "tweakpane": "^4.0.3"
   },
