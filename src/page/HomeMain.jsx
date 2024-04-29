@@ -5,8 +5,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GetQuote from "../components/GetQuote";
 import dat from "dat.gui";
+
 import Video from "../components/Video";
 import Cards from "../components/Cards";
+
+import Carousel from "../components/Carousel";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -242,7 +246,12 @@ const HomeMain = () => {
         
       </div>
     </section>
+
     {/* <GetQuote/> */}
+
+    <GetQuote/>
+    <Carousel/>
+
     </>
   );
 };

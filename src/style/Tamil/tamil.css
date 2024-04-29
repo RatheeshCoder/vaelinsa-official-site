@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.swiper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide-active {
+  z-index: 999999 !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  height: 20px;
+  width: 20px;
+  background-color: #C4C4C4;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  height: 25px;
+  width: 25px;
+  background-color: #333333;
+}
+
+.swiper-slide {
+  transition: transform 0.8s ease;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1800px) {
+  .Quote-1 h1 {
+    width: 95% !important;
+  }
+  .Quote-1 p {
+    width: 80% !important;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .Quote-1 {
+    padding-left: 3rem !important;
+  }
+  .Quote-1 h1 {
+    font-size: 2rem;
+  }
+  .Quote-1 p {
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .Quote-1 {
+    padding-left: 1.5rem !important;
+  }
+  .Quote-1 h1 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .Quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .Quote-1 {
+    width: 80% !important;
+  }
+  .Quote-2 {
+    width: 80% !important;
+  }
+}/*# sourceMappingURL=tamil.css.map */
