@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon":"../assets/editing.png",
+        "heading":"Video Editing",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+        "id": 2,
+        "icon":"../assets/podcast.png",
+        "heading":"Podcast Hosting",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+        "id": 3,
+        "icon":"../assets/live.png",
+        "heading":"Live Video",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+    },
+    {
+        "id": 4,
+        "icon":"../assets/youtubevideo.png",
+        "heading":"Video Scripting",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+    }
+]

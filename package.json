@@ -13,6 +13,7 @@
     "@gsap/react": "^2.1.0",
     "@react-three/drei": "^9.105.2",
     "@types/gsap": "^3.0.0",
+    "axios": "^1.6.8",
     "dat.gui": "^0.7.9",
     "debounce": "^2.0.0",
     "gltf-loader": "^1.0.0",
