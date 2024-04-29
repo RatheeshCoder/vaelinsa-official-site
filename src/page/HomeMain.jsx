@@ -5,6 +5,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GetQuote from "../components/GetQuote";
 import dat from "dat.gui";
+import Hero from "../components/Hero/Hero";
+import Navbar from "../components/header/Navbar";
+import '../style/manikandan/style.css'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -234,9 +237,15 @@ const HomeMain = () => {
       <div className="canvas " ref={main}></div>
       <div className="main">
         {/* render all the compound in the bellow and add the id also */}
+        <div className="nav-hero-common">
+    <Navbar/>
+    <Hero/>
+    </div>
       </div>
     </section>
+   
     <GetQuote/>
+   
     </>
   );
 };
