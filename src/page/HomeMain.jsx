@@ -9,6 +9,12 @@ import Hero from "../components/Hero/Hero";
 import Navbar from "../components/header/Navbar";
 import '../style/manikandan/style.css'
 
+import Video from "../components/Video";
+import Cards from "../components/Cards";
+
+import Carousel from "../components/Carousel";
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeMain = () => {
@@ -134,77 +140,77 @@ const HomeMain = () => {
     dirLight.castShadow = true;
 
     const loader = new GLTFLoader();
-    loader.load("/Flamingo.glb", (gltf) => {
-      model.current = gltf.scene.children[0];
-      model.current.castShadow = true;
-      model.current.receiveShadow = true;
-      scene.add(model.current);
+    // loader.load("/Flamingo.glb", (gltf) => {
+    //   model.current = gltf.scene.children[0];
+    //   model.current.castShadow = true;
+    //   model.current.receiveShadow = true;
+    //   scene.add(model.current);
 
-      mixer.current = new THREE.AnimationMixer(model.current);
-      const action = mixer.current.clipAction(gltf.animations[0]);
-      action.play();
+    //   mixer.current = new THREE.AnimationMixer(model.current);
+    //   const action = mixer.current.clipAction(gltf.animations[0]);
+    //   action.play();
 
-      const firstTriggerElement = document.getElementById("first");
-      const secondTriggerElement = document.getElementById("second");
-      const thirdTriggerElement = document.getElementById("third");
-      const fourthTriggerElement = document.getElementById("fourth");
+    //   const firstTriggerElement = document.getElementById("first");
+    //   const secondTriggerElement = document.getElementById("second");
+    //   const thirdTriggerElement = document.getElementById("third");
+    //   const fourthTriggerElement = document.getElementById("fourth");
 
-      const firstObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setupScrollTrigger(firstTriggerElement, -34, -23, 300, -1, 0, 0);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
+    //   const firstObserver = new IntersectionObserver(
+    //     (entries) => {
+    //       entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //           setupScrollTrigger(firstTriggerElement, -34, -23, 300, -1, 0, 0);
+    //         }
+    //       });
+    //     },
+    //     { threshold: 0.5 }
+    //   );
 
-      const secondObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setupScrollTrigger(secondTriggerElement, -45, -12, 300, -1, 0, 3);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
+    //   const secondObserver = new IntersectionObserver(
+    //     (entries) => {
+    //       entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //           setupScrollTrigger(secondTriggerElement, -45, -12, 300, -1, 0, 3);
+    //         }
+    //       });
+    //     },
+    //     { threshold: 0.5 }
+    //   );
 
-      const thirdObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setupScrollTrigger(thirdTriggerElement, 74, -12, 334, -1, 0, -1);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
+    //   const thirdObserver = new IntersectionObserver(
+    //     (entries) => {
+    //       entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //           setupScrollTrigger(thirdTriggerElement, 74, -12, 334, -1, 0, -1);
+    //         }
+    //       });
+    //     },
+    //     { threshold: 0.5 }
+    //   );
 
-      const fourthObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setupScrollTrigger(fourthTriggerElement, -45, 9, 334, -1, 0, 1);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
+    //   const fourthObserver = new IntersectionObserver(
+    //     (entries) => {
+    //       entries.forEach((entry) => {
+    //         if (entry.isIntersecting) {
+    //           setupScrollTrigger(fourthTriggerElement, -45, 9, 334, -1, 0, 1);
+    //         }
+    //       });
+    //     },
+    //     { threshold: 0.5 }
+    //   );
 
-      setObservers([
-        firstObserver,
-        secondObserver,
-        thirdObserver,
-        fourthObserver,
-      ]);
+    //   setObservers([
+    //     firstObserver,
+    //     secondObserver,
+    //     thirdObserver,
+    //     fourthObserver,
+    //   ]);
 
-      firstObserver.observe(firstTriggerElement);
-      secondObserver.observe(secondTriggerElement);
-      thirdObserver.observe(thirdTriggerElement);
-      fourthObserver.observe(fourthTriggerElement);
-    });
+    //   firstObserver.observe(firstTriggerElement);
+    //   secondObserver.observe(secondTriggerElement);
+    //   thirdObserver.observe(thirdTriggerElement);
+    //   fourthObserver.observe(fourthTriggerElement);
+    // });
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -237,6 +243,7 @@ const HomeMain = () => {
       <div className="canvas " ref={main}></div>
       <div className="main">
         {/* render all the compound in the bellow and add the id also */}
+<<<<<<< HEAD
         <div className="nav-hero-common">
     <Navbar/>
     <Hero/>
@@ -246,6 +253,20 @@ const HomeMain = () => {
    
     <GetQuote/>
    
+=======
+      
+          <Video />
+          <Cards />
+        
+      </div>
+    </section>
+
+    {/* <GetQuote/> */}
+
+    <GetQuote/>
+    <Carousel/>
+
+>>>>>>> 8ccb8cef6e6d732da0a410cdc979facd71ef2129
     </>
   );
 };
