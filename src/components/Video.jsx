@@ -20,7 +20,7 @@ const Video = () => {
 
     return (
 
-        <div class="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-screen">
         <div className='video'>
             <div className='container-1 flex'>
                 <div className='video-wrapper'>

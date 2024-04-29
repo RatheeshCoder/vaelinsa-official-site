@@ -1,12 +1,12 @@
 * {
   margin: 0%;
   padding: 0%;
-  color: white;
 }
 
 .nav-hero-common {
   box-shadow: 26px 24px 90px 0 rgba(87, 183, 171, 0.19);
   background-image: linear-gradient(139deg, rgba(91, 135, 75, 0.76) 18%, #0c3720 86%);
+  color: white;
 }
 
 /* Base styles */
