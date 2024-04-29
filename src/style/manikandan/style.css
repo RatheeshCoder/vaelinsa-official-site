@@ -22,6 +22,11 @@
   z-index: 10;
 }
 
+.navbar-bg {
+  box-shadow: 26px 24px 90px 0 rgba(87, 183, 171, 0.19);
+  background-image: linear-gradient(139deg, rgba(91, 135, 75, 0.76) 18%, #0c3720 86%);
+}
+
 .logo-container {
   width: 33.3%;
   display: flex;
@@ -87,6 +92,17 @@
   display: none;
   color: #333;
   cursor: pointer;
+}
+
+/* Add this to your CSS file */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff; /* Add your desired background color for the fixed navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
 }
 
 /* Responsive Styles (Media Queries) */

@@ -10,8 +10,19 @@ const Navbar = () => {
     setShowNav(false);
   };
 
+  // change nav color when scrolling
+const [color, setColor] = useState( false)
+const changeColor = () => {
+if (window.scrollY >= 2) {
+setColor(true)
+}
+else {
+setColor(false)
+}}
+window.addEventListener('scroll' ,changeColor)
+
   return (
-    <div className="navbar">
+    <div className={color ? 'navbar navbar-bg' : 'navbar'}>
     
       <div className="nav-links">
         <Link to="/about">About</Link>
